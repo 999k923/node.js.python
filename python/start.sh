@@ -5,10 +5,10 @@ IFS=$'\n\t'
 # =========================================================
 # 固定隧道参数（留空走临时隧道 trycloudflare）
 # =========================================================
-ARGO_TOKEN="${ARGO_TOKEN:-}"                # 固定隧道 token；留空=临时隧道
-ARGO_DOMAIN_FIXED="${ARGO_DOMAIN_FIXED:-}"  # 固定隧道域名（Public Hostname 绑定的域名）
-ARGO_PORT="${ARGO_PORT:-8880}"              # Argo 转发到本地 sing-box WS inbound 端口
-SINGLE_PORT_UDP="${SINGLE_PORT_UDP:-tuic}"  # 单端口 UDP：tuic / hy2
+ARGO_TOKEN=""                # 固定隧道 token；留空=临时隧道
+ARGO_DOMAIN_FIXED=""  # 固定隧道域名（Public Hostname 绑定的域名）
+ARGO_PORT="8880"              # Argo 转发到本地 sing-box WS inbound 端口
+SINGLE_PORT_UDP="tuic"  # 单端口 UDP：tuic / hy2
 
 # =========================================================
 # Nezha V1（只保留 V1）
@@ -18,7 +18,7 @@ SINGLE_PORT_UDP="${SINGLE_PORT_UDP:-tuic}"  # 单端口 UDP：tuic / hy2
 # =========================================================
 NEZHA_SERVER=""   # 例如 nezha.xxx.com:8008
 NEZHA_KEY=""         # v1: NZ_CLIENT_SECRET
-NEZHA_PORT="${NEZHA_PORT:-}"       # v0 变量（忽略）
+NEZHA_PORT=""       # v0 变量（忽略）
 
 # =========================================================
 # CF 优选域名列表
