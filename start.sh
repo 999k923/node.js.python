@@ -24,7 +24,7 @@ SINGLE_PORT_UDP="tuic"
 NEZHA_SERVER=""   # 例如：nezha.xxx.com:8008
 NEZHA_KEY=""      # 例如：NZ_CLIENT_SECRET
 # v0 不需要，必须留空
-NEZHA_PORT=""# v0不支持 必须留空，只能支持V1
+NEZHA_PORT=""     # v0不支持 必须留空，只能支持V1
 
 # =========================================================
 # CF 优选域名列表
