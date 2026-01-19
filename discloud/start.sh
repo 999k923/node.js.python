@@ -285,10 +285,7 @@ cat <<INFO
 
 ===================================================
 节点信息（日志可复制）
-UUID: ${UUID}
-公网 IP: ${PUBLIC_IP}
-Argo 域名: ${ARGO_DOMAIN}
-本地端口: ${ARGO_PORT}
+vless://${UUID}@${ARGO_DOMAIN}:443?encryption=none&security=tls&sni=${ARGO_DOMAIN}&type=ws&host=${ARGO_DOMAIN}&path=%2F${UUID}-vless
 ===================================================
 INFO
 
